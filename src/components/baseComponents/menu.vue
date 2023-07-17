@@ -2,11 +2,10 @@
     <o-dropdown aria-role="list" v-model="model">
         <template #trigger="{ active }">
             <o-button :inverted="inverted">
-                <div :class="classToMenu">
+                <div v-bind:class="[active ? classToMenuActive : classToMenu, classToMenu]">
                     <span>{{ label }}</span>
-                    <DownArrowIcon v-if="!active" />
+                    <DownArrowIcon v-if="!active" class="icon"/>
                     <UpArrowIcon v-else />
-
                 </div>
             </o-button>
         </template>
@@ -43,6 +42,10 @@ export default {
             default: "",
         },
         classToMenu: {
+            type: String,
+            default: "",
+        },
+        classToMenuActive: {
             type: String,
             default: "",
         },
@@ -85,4 +88,7 @@ export default {
     },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.icon:hover {
+  stroke: #F5D437;
+}</style>

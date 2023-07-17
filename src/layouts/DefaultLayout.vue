@@ -1,7 +1,6 @@
 <template>
     <div class="body-font font-urbanist">
         <!-- Header -->
-
         <div class="flex px-64 py-5 bg-white shadow justify-between items-center gap-72">
             <div class="w-40 h-14 justify-start items-center gap-5 flex">
                 <div
@@ -28,9 +27,10 @@
                 </div>
                 <div class="justify-end items-center gap-1 flex">
                     <div class="px-0.5 py-2 justify-center items-center gap-2 flex text-stone-500 text-xl">
-                        <menuBtn :label="$t('languages')" :inverted="true" :options="languages" @selElemnt="emitedSelLang"
+                        <menuBtn :label="$t('languages')" :inverted="true" :options="languages" @selElemnt="emitedSelLang" :radioBtn="true"
                             itemActiveClass="bg-yellow rounded-2xl text-black"
-                            classToMenu="w-24 h-10 justify-end items-center gap-1 inline-flex hover:text-primary"
+                            classToMenu="w-26 h-10 justify-end items-center gap-1 inline-flex hover:text-primary"
+                            classToMenuActive="text-primary"
                             classToDivItem="h-36 absolute bg-white rounded-2xl shadow border border-neutral-200 flex-col justify-start items-start inline-flex"
                             classToItem="w-52 h-12 px-4 py-2 justify-between items-center gap-2 inline-flex cursor-pointer hover:bg-yellow hover:rounded-2xl">
                         </menuBtn>

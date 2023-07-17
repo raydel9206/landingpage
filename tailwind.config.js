@@ -1,6 +1,11 @@
+const newLocal = "tw-elements/dist/plugin.cjs";
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.vue"],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   theme: {
     extend: {
       colors: {
@@ -21,5 +26,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require(newLocal)]
 };
