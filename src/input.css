@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Urbanist";
+    src: url("/font/Urbanist/Urbanist-VariableFont_wght.ttf");
+  }
