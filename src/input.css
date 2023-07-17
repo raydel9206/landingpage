@@ -6,6 +6,6 @@
   @font-face {
       font-family: "Urbanist-Regular";
       font-style: normal;
-      src: local('Urbanist-Regular'), url("/public/font/Urbanist/Urbanist-VariableFont_wght.ttf") format('truetype');
+      src: local('Urbanist-Regular'), url("/font/Urbanist/Urbanist-VariableFont_wght.ttf") format('truetype');
     }
 }
