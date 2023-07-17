@@ -7,6 +7,7 @@ export default {
         // Configure your color palette here
         white: "#ffffff",
         yellow: "#FCF4CA",
+        yellow_dark: "#5C4D05",
         primary: "#F5D437",
         primary_dark: "#BD9E09",
         grey: "#343434",

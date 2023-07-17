@@ -13,25 +13,24 @@
             <div class="justify-end items-center gap-12 flex">
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
                     <div class="text-center text-stone-500 text-xl font-normal">
-                        <btn :label="$t('about_us')" :inverted="true" />
+                        <btn :label="$t('about_us')" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
                     <div class="text-center text-stone-500 text-xl font-normal">
-                        <btn :label="$t('faq')" :inverted="true" />
+                        <btn :label="$t('faq')" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
                     <div class="text-center text-stone-500 text-xl font-normal">
-                        <btn :label="$t('contact_us')" :inverted="true" />
+                        <btn :label="$t('contact_us')" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="justify-end items-center gap-1 flex">
                     <div class="px-0.5 py-2 justify-center items-center gap-2 flex text-stone-500 text-xl">
                         <menuBtn :label="$t('languages')" :inverted="true" :options="languages" @selElemnt="emitedSelLang"
-                            :radioBtn="true" 
                             itemActiveClass="bg-yellow rounded-2xl text-black"
-                            classToMenu="w-24 h-10 justify-end items-center gap-1 inline-flex"
+                            classToMenu="w-24 h-10 justify-end items-center gap-1 inline-flex hover:text-primary"
                             classToDivItem="h-36 absolute bg-white rounded-2xl shadow border border-neutral-200 flex-col justify-start items-start inline-flex"
                             classToItem="w-52 h-12 px-4 py-2 justify-between items-center gap-2 inline-flex cursor-pointer hover:bg-yellow hover:rounded-2xl">
                         </menuBtn>
@@ -162,4 +161,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+
+</style>
