@@ -22,7 +22,7 @@ export default {
         bermuda: "#78dcca",
       },
       fontFamily: {
-        urbanist: ["Urbanist", "sans"],
+        urbanist_regaular: ["Urbanist-Regular", "sans"],
       },
     },
   },
