@@ -17,14 +17,12 @@ export default {
         primary_dark: "#BD9E09",
         grey: "#343434",
         olive_dark: "#2C2502",
-        tahiti: "#3ab7bf",
-        silver: "#ecebff",
-        bermuda: "#78dcca",
+        yellow_hover: "#f5db5d",
       },
       fontFamily: {
         urbanist_regaular: ["Urbanist-Regular", "sans"],
       },
     },
   },
-  plugins: [require(newLocal)]
+  plugins: [require(newLocal)],
 };

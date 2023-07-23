@@ -1,32 +1,32 @@
 <template>
-    <div class="layout body-font font-urbanist_regaular">
+    <div class="layout w-full body-font font-urbanist_regaular">
         <!-- Header -->
-        <div class="w-full flex justify-between items-center" style="padding: 21px 250px;">
+        <div class="header w-full">
             <div class="w-40 h-14 justify-start items-center gap-5 flex">
                 <div
                     class="w-14 h-14 p-2.5 bg-primary rounded-2xl flex-col justify-center items-center gap-1.5 inline-flex">
-                    <div @click="$router.push({ name: 'home' })" class="cursor-pointer w-8 h-8 relative"> <rapi-2 /></div>
+                    <div class="w-8 h-8 relative"> <rapi-2 /></div>
                 </div>
                 <div class="text-neutral-700 text-3xl font-bold">Rapi2</div>
             </div>
             <div class="justify-end items-center gap-12 flex">
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
-                    <div class="text-center text-gray-400 text-xl font-normal">
+                    <div class="text-center text-stone-500 text-xl font-normal">
                         <btn :label="$t('about_us')" @click="$router.push({ name: 'who' })" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
-                    <div class="text-center text-gray-400 text-xl font-normal">
+                    <div class="text-center text-stone-500 text-xl font-normal">
                         <btn :label="$t('faq')" @click="$router.push({ name: 'faq' })" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="px-0.5 py-2 justify-center items-center gap-2 flex">
-                    <div class="text-center text-gray-400 text-xl font-normal">
+                    <div class="text-center text-stone-500 text-xl font-normal">
                         <btn :label="$t('contact_us')" :inverted="true" class="hover:text-primary" />
                     </div>
                 </div>
                 <div class="justify-end items-center gap-1 flex">
-                    <div class="px-0.5 py-2 justify-center items-center gap-2 flex text-gray-400 text-xl">
+                    <div class="px-0.5 py-2 justify-center items-center gap-2 flex text-stone-500 text-xl">
                         <menuBtn :label="$t('languages')" :inverted="true" :options="languages" @selElemnt="emitedSelLang"
                             :radioBtn="true" itemActiveClass="bg-yellow rounded-2xl text-black"
                             classToMenu="w-26 h-10 justify-end items-center gap-1 inline-flex hover:text-primary"
@@ -44,14 +44,14 @@
         <!-- End Header -->
         <div>
             <!-- Main content -->
-            <main style="width: 1920px;">
+            <main>
                 <router-view />
             </main>
             <!-- End Main content -->
         </div>
     </div>
     <!-- Footer -->
-    <div class="div-footer" style="background: var(--primario-100, #2C2502);">
+    <div class="div-footer w-full" style="background: var(--primario-100, #2C2502);">
         <div class="self-stretch justify-between items-center gap-24 inline-flex">
             <div class="justify-start items-start gap-60 flex">
                 <div class="flex-col justify-start items-start gap-4 inline-flex">
@@ -131,12 +131,12 @@
                 </div>
             </div>
             <div class="flex-col justify-start items-start gap-8 inline-flex">
-                <div class="opacity-60 text-white text-base font-normal">Suscríbete para recibir información de
+                <div class=" opacity-60 text-white text-base font-normal">Suscríbete para recibir información de
                     las mejores promociones.</div>
                 <div class="justify-start items-start gap-8 inline-flex">                                         
                         <o-field
                             class="self-stretch h-12 px-5 py-3.5 bg-white rounded-3xl border border-neutral-200 justify-start items-center gap-2.5 inline-flex">
-                            <o-input rounded></o-input>
+                            <o-input placeholder="No label" rounded></o-input>
                         </o-field>                    
                     <div class="w-32 px-8 py-2.5 bg-primary rounded-3xl justify-center items-center gap-2.5 flex">
                         <div class="text-neutral-700 text-xs font-semibold">Suscribirse</div>
@@ -163,7 +163,7 @@
                             <Facebook />
                         </div>
                         <div
-                            class="w-12 h-12 p-0.5 rounded-3xl border border-white border-opacity-25 justify-center items-center gap-2 flex">
+                            class="w-11 h-11 p-0.5 rounded-3xl border border-white border-opacity-25 justify-center items-center gap-2 flex">
                             <div class="w-5 h-5 relative">
                                 <Instagram />
                             </div>
@@ -231,6 +231,13 @@ export default {
 </script>
 
 <style scoped>
+.header {
+    display: flex;
+    padding: 21px 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .layout {
     display: flex;
     flex-direction: column;

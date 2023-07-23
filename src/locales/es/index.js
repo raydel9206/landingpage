@@ -4,5 +4,6 @@ export default {
     languages: "Idiomas",
     faq: "FAQ",
     back_home: "Regresar a inicio",
+    email: "Correo,"
   };
   

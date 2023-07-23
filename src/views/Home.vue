@@ -76,29 +76,165 @@
   <!-- End Section carousel -->
 
   <!-- Section Why use Rapid2 -->
-  <div class="flex px-10 pt-10 pb-10 bg-gradient-to-b from-amber-50 to-white flex-col justify-center items-center gap-14 inline-flex ">
+  <div class="w-full div-rapid2" style="background: linear-gradient(180deg, #FDFAEA 0%, #FFF 100%);">
     <div class="text-lime-950 text-5xl font-bold">¿Por qué deberías usar Rapi2?</div>
-    <div class="flex px-64 text-center text-yellow-700 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing
+    <div class="flex px-64 text-center text-yellow-700 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
+      adipiscing
       elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
       ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
     </div>
-    <div class="div_section_card column-2">
-      <div class="w-96 h-96 relative image_promotions inline-flex">
-        <img :src="promotionsImages.src" class=" rounded-2xl w-full" :alt="promotionsImages.alt" />
+    <div class="div_section_card grid justify-items-center">
+      <div class="image_promotions">
+        <img class="w-90" src="../assets/MOVIL_LANDING_ISOMETRIC.webp" :alt="promotionsImages.alt" />
       </div>
-      <div class="grid grid_promotions inline-flex">
-        <div v-for="(elem, i) in promotions" :key="i"
-          class=" w-96 h-36 px-6 bg-white rounded-2xl shadow border border-yellow-400 justify-start items-center gap-4 inline-flex">
-          <div class="w-6 h-6 bg-green-500 rounded-2xl flex-col justify-center items-center gap-2 inline-flex"></div>
+      <div class="grid_promotions">
+        <div class="div-uses">
+          <div class="w-6 h-6 bg-green-500 rounded-2xl flex-col justify-center items-center gap-2 inline-flex">
+            <Check />
+          </div>
           <div class="grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
-            <div class="self-stretch text-neutral-700 text-xl font-semibold uppercase">{{ elem.title }}</div>
-            <div class="self-stretch text-stone-500 text-base font-normal">{{ elem.subtitle }}</div>
+            <div class="self-stretch text-neutral-700 text-xl font-semibold uppercase">Gran variedad de productos y
+              negocios</div>
+            <div class="self-stretch text-stone-500 text-base font-normal">Podrás disfrutar de la comida de tus negocios
+              favoritos desde su casa</div>
+          </div>
+        </div>
+        <div class="div-uses">
+          <div class="w-6 h-6 bg-green-500 rounded-2xl flex-col justify-center items-center gap-2 inline-flex">
+            <Check />
+          </div>
+          <div class="grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
+            <div class="text-neutral-700 text-xl font-semibold uppercase">Seguridad en sus pagos</div>
+            <div class="self-stretch text-stone-500 text-base font-normal">Con tarjetas de crédito o débito</div>
+            <div class="bg-white justify-start items-center gap-6 inline-flex">
+              <div class="relative">
+                <Tropipay />
+              </div>
+              <div class="relative">
+                <Visa />
+              </div>
+              <div class="relative">
+                <Mastercard />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-uses">
+          <div class="w-6 h-6 bg-green-500 rounded-2xl flex-col justify-center items-center gap-2 inline-flex">
+            <Check />
+          </div>
+          <div class="grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
+            <div class="title-uses"> Entregas rápidas y con calidad</div>
+            <div class="self-stretch text-stone-500 text-base font-normal">Ordene cualquier producto y recibirá el pedido
+              en minutos</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End section Why use Rapid2 -->
+
+  <!-- Section Prueba nuestra aplicación -->
+  <div class="grid justify-items-center" style="background: var(--base-00, #FFF);">
+    <div style="display: inline-flex; align-items: center; gap: 127px;">
+      <div>
+        <img class="w-full" src="../assets/VISTAS_LANDING_ISOMETRIC.webp" />
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-start;gap: 24px;">
+        <div class="text-lime-950 text-6xl font-bold">Prueba nuestra aplicación</div>
+        <div
+          style="width: 420px; color: var(--primario-80, #8D7607); font-size: 24px; font-style: normal; font-weight: 500; line-height: normal;">
+          Desde su casa ordene sus platillos favoritos de los mejores
+          restaurantes</div>
+        <div class="justify-start items-start gap-6 inline-flex">
+          <div class="px-4 py-2 bg-neutral-700 rounded-lg shadow justify-center items-center gap-2.5 flex">
+            <div class="w-9 h-9 relative">
+              <Ios />
+            </div>
+            <div class="flex-col justify-center items-start inline-flex">
+              <div class="text-white text-base font-normal">Descárgala ahora</div>
+              <div class="text-primary text-4xl font-bold">App Store</div>
+            </div>
+          </div>
+          <div class="px-4 py-2 bg-neutral-700 rounded-lg shadow justify-center items-center gap-2.5 flex">
+            <div class="w-8 h-8 relative">
+              <Playstore />
+            </div>
+            <div class="flex-col justify-center items-start inline-flex">
+              <div class="text-white text-base font-normal">Descárgala ahora</div>
+              <div class="text-primary text-4xl font-bold">Google Play</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End section Why use Rapid2 -->
+
+  <!-- End section Prueba nuestra aplicación -->
+
+  <!-- Section Nuestros Negocios -->
+  <div class="" style="display: flex; padding: 100px 250px; flex-direction: column; align-items: center; gap: 60px;">
+    <div class="self-stretch flex-col justify-start items-center gap-2 flex">
+      <div class="self-stretch text-center text-neutral-700 text-5xl font-bold">Nuestros negocios</div>
+      <div class="self-stretch text-center text-zinc-500 text-2xl font-medium">Los mejores negocios con comida a domicilio
+        los encontrarás en Rapi2</div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 77px;">
+      <div v-for="negocio in negocios">
+        <img :key="i" class="w-24 h-24" :src="negocio.src" />
+      </div>
+
+    </div>
+  </div>
+  <!-- End section Nuestros Negocios -->
+
+
+  <!-- Section Start Now -->
+  <div class="w-full" style="background: var(--fondoweb, #F8F8F8); display: flex; padding: 100px 0px; flex-direction: column; align-items: center; gap: 54px;">
+    <div class="w-3/4 flex flex-col items-center" style="gap: 8px;">
+      <div class="self-stretch text-center text-neutral-700 text-5xl font-bold">
+        Comienza ahora con Rapi2
+      </div>
+      <div class=" text-center text-zinc-500 text-2xl font-medium">Acompáñanos ahora y regístrate </div>
+    </div>
+    <div class="px-48 justify-center items-center gap-20 inline-flex">
+      <div class="w-2/6 px-8 py-6 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2 inline-flex">
+        <div class="flex-col justify-start items-center gap-4 flex">
+          <div class="flex-col justify-start items-start flex">
+            <div class="w-16 h-16 justify-center items-center gap-2 inline-flex bg-primary rounded-full">
+              <Shop />
+            </div>
+            
+          </div>
+          <div class="text-center text-neutral-600 text-2xl font-semibold">Une tu negocio a Rapi2</div>
+          <div class="text-center text-neutral-500 text-base font-normal">Gestione su negocio y aumente sus ventas
+          </div>
+          <div class="h-12 px-8 py-2.5 bg-neutral-700 rounded-3xl justify-center items-center gap-2.5 inline-flex">
+            <div class="text-primary text-sm font-semibold">¡Registrate ya!</div>
+          </div>
+        </div>
+      </div>
+      <div class="w-2/6 px-8 py-6 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2 inline-flex">
+        <div class="flex-col justify-start items-center gap-4 flex">
+          <div class="flex-col justify-start items-start flex">
+            <div class="w-16 h-16 justify-center rounded-full bg-primary items-center gap-2 inline-flex">
+              <Moto />
+            </div>
+            
+          </div>
+          <div class="text-center text-neutral-600 text-2xl font-semibold">Conviértete en repartidor</div>
+          <div class="text-center text-neutral-500 text-base font-normal">Realice entregas ganando dinero y siendo su
+            propio jefe</div>
+          <div class="h-12 px-8 py-2.5 bg-neutral-700 rounded-3xl justify-center items-center gap-2.5 inline-flex">
+            <div class="text-primary text-sm font-semibold">¡Registrate ya!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Section Start Now -->
 </template>
 
 <script>
@@ -106,8 +242,16 @@ import "tw-elements";
 import { onMounted } from "vue";
 import { Carousel, initTE } from "tw-elements";
 import ArrowNext from '../icons/ArrowNext.vue';
+import Check from '../icons/Check.vue';
+import Tropipay from '../icons/Tropipay.vue';
+import Visa from '../icons/Visa.vue';
+import Mastercard from '../icons/Mastercard.vue';
+import Ios from '../icons/Ios.vue';
+import Playstore from '../icons/Playstore.vue';
+import Moto from '../icons/Moto.vue';
+import Shop from '../icons/Shop.vue';
 export default {
-  components: { ArrowNext },
+  components: { ArrowNext, Check, Tropipay, Visa, Mastercard, Playstore, Ios, Moto, Shop },
   setup() {
     onMounted(() => {
       initTE({ Carousel });
@@ -128,9 +272,20 @@ export default {
     ];
 
     const promotionsImages =
-      { src: "https://img.freepik.com/premium-psd/smartphone-app-promotion-mockup-logo-download-buttons-with-scan-qr-code_97060-183.jpg", alt: "image_alt" };
+      { src: "../assets/MOVIL_LANDING_ISOMETRIC.webp", alt: "image_alt" };
 
-    return { carousels, promotions, promotionsImages };
+    const negocios = [
+      { src: "../src/assets/popeyes.png", alt: "Lousiana Kitchen" },
+      { src: "../src/assets/dominos.png", alt: "Domino's Pizza" },
+      { src: "../src/assets/togos.png", alt: "True to the Sandwich" },
+      { src: "../src/assets/chipotle.png", alt: "Mexican Grill" },
+      { src: "../src/assets/kfc.png", alt: "KFC" },
+      { src: "../src/assets/burger.png", alt: "Burger King" },
+      { src: "../src/assets/taco.png", alt: "Taco Bell" },
+      { src: "../src/assets/noodles.png", alt: "Noodles" },
+      { src: "../src/assets/pollo.png", alt: "Pollo Loco" },
+    ];
+    return { carousels, promotions, promotionsImages, negocios };
   }
 };
 </script>
@@ -140,23 +295,53 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: auto;
 }
 
 .grid_promotions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 20px;
 }
 
 .image_promotions {
   display: flex;
-  width: 850px;
   padding: 64px 64px 64px 64px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 54px;
+}
+
+.div-rapid2 {
+  display: flex;
+  padding: 100px 250px 80px 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+
+.div-uses {
+  display: flex;
+  width: 555px;
+  height: 120px;
+  padding: 0px 24px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  border: 0.5px solid var(--primario-60, #EEC70C);
+  background: var(--base-00, #FFF);
+  /* SHADOW 02 */
+  box-shadow: 0px 1px 24px 8px rgba(20, 20, 20, 0.08);
+}
+
+.title-uses {
+  color: var(--grises-80-p, #343434);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 </style>
