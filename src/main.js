@@ -7,6 +7,7 @@ import App from "./App.vue";
 import { createPinia } from "pinia";
 import i18n from "./plugins/i18n";
 
+
 const app = createApp(App);
 const pinia = createPinia();
 

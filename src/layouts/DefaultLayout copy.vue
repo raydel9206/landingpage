@@ -191,8 +191,9 @@ import Playstore from '../icons/Playstore.vue';
 import Facebook from '../icons/Facebook.vue';
 import Instagram from '../icons/Instagram.vue';
 import Twitter from '../icons/Twitter.vue';
+import MainHeader from "../components/MainHeader.vue";
 export default {
-    components: { btn, menuBtn, Rapi2, Ios, Playstore, Facebook, Instagram, Twitter },
+    components: { btn, menuBtn, Rapi2 },
     setup() {
         const { locale } = useI18n({ useScope: "global" });
         // Emited events from child component

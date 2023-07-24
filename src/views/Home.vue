@@ -84,11 +84,11 @@
       ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
     </div>
     <div class="div_section_card grid justify-items-center">
-      <div class="image_promotions">
-        <img class="w-90" src="../assets/MOVIL_LANDING_ISOMETRIC.webp" :alt="promotionsImages.alt" />
+      <div class="image_promotions" style="width: 50%;">
+        <img src="../assets/MOVIL_LANDING_ISOMETRIC.webp" :alt="promotionsImages.alt" />
       </div>
-      <div class="grid_promotions">
-        <div class="div-uses">
+      <div class="grid_promotions" style="width: 50%;">
+        <div class="div-uses ">
           <div class="w-6 h-6 bg-green-500 rounded-2xl flex-col justify-center items-center gap-2 inline-flex">
             <Check />
           </div>
@@ -182,7 +182,7 @@
     </div>
     <div style="display: flex; align-items: flex-start; gap: 77px;">
       <div v-for="negocio in negocios">
-        <img :key="i" class="w-24 h-24" :src="negocio.src" />
+        <img class="w-24 h-24" :src="negocio.src" />
       </div>
 
     </div>
@@ -191,7 +191,8 @@
 
 
   <!-- Section Start Now -->
-  <div class="w-full" style="background: var(--fondoweb, #F8F8F8); display: flex; padding: 100px 0px; flex-direction: column; align-items: center; gap: 54px;">
+  <div class="w-full"
+    style="background: var(--fondoweb, #F8F8F8); display: flex; padding: 100px 0px; flex-direction: column; align-items: center; gap: 54px;">
     <div class="w-3/4 flex flex-col items-center" style="gap: 8px;">
       <div class="self-stretch text-center text-neutral-700 text-5xl font-bold">
         Comienza ahora con Rapi2
@@ -205,7 +206,7 @@
             <div class="w-16 h-16 justify-center items-center gap-2 inline-flex bg-primary rounded-full">
               <Shop />
             </div>
-            
+
           </div>
           <div class="text-center text-neutral-600 text-2xl font-semibold">Une tu negocio a Rapi2</div>
           <div class="text-center text-neutral-500 text-base font-normal">Gestione su negocio y aumente sus ventas
@@ -221,7 +222,7 @@
             <div class="w-16 h-16 justify-center rounded-full bg-primary items-center gap-2 inline-flex">
               <Moto />
             </div>
-            
+
           </div>
           <div class="text-center text-neutral-600 text-2xl font-semibold">Conviértete en repartidor</div>
           <div class="text-center text-neutral-500 text-base font-normal">Realice entregas ganando dinero y siendo su
@@ -295,18 +296,18 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: stretch
 }
 
 .grid_promotions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 48px;
 }
 
 .image_promotions {
   display: flex;
-  padding: 64px 64px 64px 64px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -324,7 +325,7 @@ export default {
 
 .div-uses {
   display: flex;
-  width: 555px;
+  width: 100%;
   height: 120px;
   padding: 0px 24px;
   align-items: center;
