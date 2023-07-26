@@ -1,15 +1,17 @@
 <template>
     <div class="div-rapid2" style="background: linear-gradient(180deg, #FDFAEA 0%, #FFF 100%);">
-        <div class="text-lime-950 text-5xl font-bold">¿Por qué deberías usar Rapi2?</div>
-        <div class="flex px-64 text-center text-yellow-700 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
-            adipiscing
-            elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt
-            rhoncus,
-            ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        <div style="width: 67%; height: 19%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 18px; display: inline-flex">
+            <div style="color: #2C2502; font-size: 45px; font-weight: 700; word-wrap: break-word">
+                ¿Por qué deberías usar Rapi2?</div>
+            <div
+                style="text-align: center; color: #8D7607; font-size: 24px; font-family: Urbanist; font-weight: 500; word-wrap: break-word">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+                nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac
+                nunc libero urna, feugiat.</div>
         </div>
         <div class="div_section_card grid justify-items-center">
-            <div class="image_promotions" >
-                <img src="../../assets/MOVIL_LANDING_ISOMETRIC.webp" />
+            <div class="image_promotions" style="height: 100%;">
+                <img class="" src="../../assets/MOVIL_LANDING_ISOMETRIC.webp" />
             </div>
             <div class="grid_promotions">
                 <div class="div-uses">
@@ -52,7 +54,8 @@
                     </div>
                     <div class="grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
                         <div class="text-neutral-700 text-xl font-semibold uppercase"> Entregas rápidas y con calidad</div>
-                        <div class="self-stretch text-stone-500 text-base font-normal">Ordene cualquier producto y recibirá el pedido en minutos</div>
+                        <div class="self-stretch text-stone-500 text-base font-normal">Ordene cualquier producto y recibirá
+                            el pedido en minutos</div>
                     </div>
                 </div>
 
@@ -69,14 +72,16 @@ import Mastercard from '../../icons/Mastercard.vue';
 </script>
 <style>
 .div_section_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch
 }
 
 .image_promotions {
     display: flex;
+    width: 44%;
+    height: 82%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -95,7 +100,7 @@ import Mastercard from '../../icons/Mastercard.vue';
 .div-uses {
     display: flex;
     width: 100%;
-    height: 13%;
+    height: 125px;
     padding: 0px 24px;
     align-items: center;
     gap: 16px;
@@ -107,9 +112,9 @@ import Mastercard from '../../icons/Mastercard.vue';
 }
 
 .grid_promotions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-}
-</style>
+    max-width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}</style>

@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-        <div class="px-8 py-6 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2 inline-flex">
+        <div class="w-2/6 px-8 py-6 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2 inline-flex">
           <div class="flex-col justify-start items-center gap-4 flex">
             <div class="flex-col justify-start items-start flex">
               <div class="w-16 h-16 justify-center rounded-full bg-primary items-center gap-2 inline-flex">

@@ -94,23 +94,27 @@
     </div>
     <div class="self-stretch h-20 flex-col justify-center  gap-8 flex">
       <div class="self-stretch h-px opacity-20 bg-white border"></div>
-      <div class="justify-between items-center gap-40 inline-flex">
-        <div class="justify-start items-center gap-5 flex">
-          <div class=" h-14 p-2.5 bg-primary rounded-2xl flex-col justify-center items-center gap-1.5 inline-flex">
+      <div class="justify-between items-center inline-flex">
+        <div class="justify-start items-center gap-5 flex" style="width: 11% ;">
+          <div class="p-2.5 bg-primary rounded-2xl flex-col justify-center items-center gap-1.5 inline-flex">
             <div class="w-8 h-8 relative">
               <Rapi2 />
             </div>
           </div>
           <div class="text-white text-3xl font-bold">Rapi2</div>
         </div>
-        <div class="justify-end items-center gap-14 inline-flex">
-          <div class="text-white text-xs font-semibold"> Nos puedes encontrar en...</div>
+        <div class="justify-start items-center gap-12 flex" style="width: 31%">
+          <div class="text-amber-100 text-xl font-semibold">Términos y condiciones</div>
+          <div class="text-amber-100 text-xl font-semibold">Política de privacidad</div>
+        </div>
+        <div class="justify-end items-center gap-14 flex">
+          <div class="text-white text-xl font-semibold"> Nos puedes encontrar en...</div>
           <div class="justify-start items-start gap-6 flex">
             <div class="w-12 h-12 relative">
               <Facebook />
             </div>
             <div
-              class="w-12 h-12 p-0.5 rounded-3xl border border-white border-opacity-25 justify-center items-center gap-2 flex">
+              class="w-12 h-12 p-0.5 rounded-full border-2 border-white border-opacity-25 justify-center items-center gap-2 flex">
               <div class="w-5 h-5 relative">
                 <Instagram />
               </div>
@@ -122,8 +126,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 <script>
@@ -176,12 +178,11 @@ export default {
 </script>
 <style>
 .footer {
-    display: flex;
-    padding: 64px 13% 32px 13%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 62px;
-}
-</style>
+  display: flex;
+  padding: 64px 13% 32px 13%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+}</style>
 

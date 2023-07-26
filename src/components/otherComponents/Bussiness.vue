@@ -6,10 +6,8 @@
                 domicilio
                 los encontrarás en Rapi2</div>
         </div>
-        <div style="display: flex; align-items: flex-start; gap: 77px;">
-            <div v-for="negocio in negocios">
-                <img class="w-24 h-24" :src="negocio.src" />
-            </div>
+        <div class="justify-center" style="max-height: 21%; width: 100%; display: flex; align-items: center; gap: 5%;">
+            <img class="max-h-24" :src="negocio.src" v-for="negocio in negocios" />
         </div>
     </div>
 </template>
@@ -29,4 +27,4 @@ const negocios = [
 
 
 </script>
-<style></style>
+<style scoped></style>

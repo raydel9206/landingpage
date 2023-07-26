@@ -1,12 +1,12 @@
 <template>
   <div class="grid justify-items-center" style="background: var(--base-00, #FFF);">
     <div style="display: inline-flex; align-items: center; gap: 9.4%; padding: 72px 13% 0px 17%;">
-      <div class="h-ful" style="width: 42%;">
-        <img class="w-full" style="max-width: 100%" src="../../assets/VISTAS_LANDING_ISOMETRIC.webp" />
+      <div style="max-width: 42%; height: 100%;">
+        <img style="height: 100%;" src="../../assets/VISTAS_LANDING_ISOMETRIC.webp" />
       </div>
       <div class="flex"
         style="width: 49%; height: 40%; display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
-        <div class="flex text-lime-950 text-6xl font-bold">Prueba nuestra aplicación</div>
+        <div style="color: var(--primario-100, #2C2502); leading-trim: both; text-edge: cap; font-size: 56px; font-style: normal; font-weight: 700; line-height: normal; width: 100%; height: 7%;">Prueba nuestra aplicación</div>
         <div
           style="color: var(--primario-80, #8D7607); font-size: 24px; font-style: normal; font-weight: 500; line-height: normal;">
           Desde su casa ordene sus platillos favoritos de los mejores
