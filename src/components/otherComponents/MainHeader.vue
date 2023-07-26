@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex justify-between items-center" style="padding: 21px 250px;">
+  <div class="w-full flex justify-between items-center" style="padding: 21px 13%;">
     <div class="w-40 h-14 justify-start items-center gap-5 flex">
       <div class="w-14 h-14 p-2.5 bg-primary rounded-2xl flex-col justify-center items-center gap-1.5 inline-flex">
         <div @click="$router.push({ name: 'home' })" class="cursor-pointer w-8 h-8 relative"> <rapi-2 /></div>
@@ -86,7 +86,7 @@ export default {
 <style>
 .header {
   display: flex;
-  padding: 21px 250px;
+  padding: 21px 13%;
   justify-content: space-between;
   align-items: center;
 }

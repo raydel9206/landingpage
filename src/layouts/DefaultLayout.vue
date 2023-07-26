@@ -1,15 +1,17 @@
 <template>
-    <MainHeader />
+    
     <div class="layout body-font font-urbanist_regaular">
+        <MainHeader />
         <div>
             <!-- Main content -->
-            <main style="max-width: 100%;">
+            <main>
                 <router-view />
             </main>
             <!-- End Main content -->
         </div>
     </div>
     <Footer />
+    
 </template>
 
 <script>
@@ -18,9 +20,6 @@ import Footer from '../components/otherComponents/Footer.vue';
 export default {
     components: { MainHeader, Footer },
     setup() {
-        // Emited events from child component
-
-
     },
     methods: {
         select: function (app, repo) {

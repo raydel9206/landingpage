@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div id="app" class="container" style="max-width: 100%;">
+  <div id="app" class="container mx-auto" style="max-width: 1920px;">
     <!-- Main content -->
     <main class="">
       <router-view />

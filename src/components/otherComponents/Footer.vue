@@ -177,7 +177,7 @@ export default {
 <style>
 .footer {
     display: flex;
-    padding: 64px 250px 32px 250px;
+    padding: 64px 13% 32px 13%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
